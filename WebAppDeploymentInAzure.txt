@@ -24,6 +24,6 @@ Azure Web App Deployment:
     select Source - Github
     Because of this, we need to have a GitHub repo in java, in my case I have created a Springboot App and created a Repo (name- WebAppDeploymentInAzure).
     Sign in to your Github account 
-    select repo.
+    select repo.(Repo Link: "https://github.com/SainadhGosukula/WebAppDeploymentInAzure")
     Click on Save.
     After some time it will reflect on the URL.
