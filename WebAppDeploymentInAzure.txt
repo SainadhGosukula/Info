@@ -1,0 +1,29 @@
+Azure Web App Deployment:
+> Go to Web App service and create with the following details:
+
+1. Basic Section:
+    select any subscription and Resource group
+    Under Instance Details, provide a Name which should be unique. In my case, I'm using the "webappdeployment007" with the default domain, which is ".azurewebsites.net".
+    Publish - select code
+    Runtime stack - select  Java 11
+    Operating System - Windows or Linux (because java is available on both).
+    Under App Service Plan : 
+    If you have an existing app service plan you can use that or you need to create one.
+    In this app service plan, you need to provide a name for your app service plan, under one app service plan we can publish many websites based on their size.
+    Select SKU and Size - this is the main field which is related to performance, size and pricing. We have one free app service plan SKU for a lifetime, which is under Linux operating system  "Free F1". I'm selecting Free F1.
+
+2. Deployment:
+    We can use the Continuous Deployment through Github, but for the Free F1 plan we dont have these features. so we need to do it manually.
+
+3. Skip All and Create 
+
+> After creating go-to resources and copy and browse the URL which is created by azure with our website name. In my case "https://webappdeployment007.azurewebsites.net/".
+
+> Goto Deployment Center from the left side menu.
+    Under Setting:
+    select Source - Github
+    Because of this, we need to have a GitHub repo in java, in my case I have created a Springboot App and created a Repo (name- WebAppDeploymentInAzure).
+    Sign in to your Github account 
+    select repo.
+    Click on Save.
+    After some time it will reflect on the URL.
